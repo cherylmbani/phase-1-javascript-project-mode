@@ -11,15 +11,43 @@
             "id": 2,
             "name":"Ginger",
             "scientificName":"Zingiber officinale",
-            "description":"a flowering plant, cultivated for its pungent, aromatic rhizome (underground stem) which is used as a spice and sometimes in medicine",
-            "benefits":"Aids digestion, reduces nausea",
+            "description":"a flowering plant, cultivated for its pungent, aromatic rhizome (underground stem) which is used as a spice and sometimes in medicine.",
+            "benefits":"Aids digestion, reduces nausea"
         },
         {
             "id": 3,
             "name": "Fennel",
             "scientificName": "Foeniculum vulgare",
-            "description": "",
-            "benefits": ""
+            "description": "An aromatic hern know for its licorice-like flavor and feathery leaves. It has a bulbous base, long green stalks, and produces small, yellow flowers.",
+            "benefits": " Relieves gas, supports digestion"
+        },
+        {
+            "id": 4,
+            "name": "Peppermint",
+            "scientificName": "Mentha piperita",
+            "description": "A fragrant perennial herb characterized by square stems, lanceolate leaves with serrated edges, and purple flowers.",
+            "benefits": " Soothes digestion, relieves headache, and improves focus and memory."
+        },
+        {
+            "id": 5,
+            "name": "Chamomile",
+            "scientificName": "Matricaria chamomilla",
+            "description": "Gentle flower used to calm the gut and mind.",
+            "benefits": " Eases digestion, reduces anxiety, supports skin health"
+        },
+        {
+            "id": 6,
+            "name": "Turmeric",
+            "scientificName": "Curcuma longa",
+            "description": "Golden root with powerful anti-inflammatory effects.",
+            "benefits": " Supports digestion, reduces inflammation"
+        },
+        {
+            "id": 7,
+            "name": "Mugwort",
+            "scientificName": "Artemisia vulgaris",
+            "description": "A wild herb with a long history in dreamwork, rituals, and digestion.",
+            "benefits": "Enhances dreams, supports digestion, eases menstrual discomfort"
         }
     ]
 
