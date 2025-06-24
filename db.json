@@ -1,0 +1,26 @@
+{
+    "herbs":[
+        {
+            "id": 1,
+            "name": "Aloe Vera",
+            "scientificName": "Aloe barbadensis miller",
+            "description": "a succulent plant known for its thick, fleshy, green to grey-green leaves, often with white flecks and serrated edges.",
+            "benefits": "Soothes burns, promote wound healig, aids digestion"
+        },
+        {
+            "id": 2,
+            "name":"Ginger",
+            "scientificName":"Zingiber officinale",
+            "description":"a flowering plant, cultivated for its pungent, aromatic rhizome (underground stem) which is used as a spice and sometimes in medicine",
+            "benefits":"Aids digestion, reduces nausea",
+        },
+        {
+            "id": 3,
+            "name": "Fennel",
+            "scientificName": "Foeniculum vulgare",
+            "description": "",
+            "benefits": ""
+        }
+    ]
+
+}
