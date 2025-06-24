@@ -46,7 +46,7 @@ section-1 p{
 #section-2{
     margin-bottom: 40px;
     padding: 20px;
-    border-left: 100px #66bb6a;
+    border-left: 40px #66bb6a;
 
 }
 
@@ -81,7 +81,19 @@ forn input[type="radio"]{
     font-weight: bold;
 }
 
-#section
+#section-3{
+    padding: 20px;
+    margin-top: 30px;
+    border-left: 40px;
+    border-radius: 10px;
+}
+
+#feedback-icons{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
 
 
 
