@@ -6,41 +6,59 @@ createHerbList();
 // use fetch default GET to access the server herbs data and use the data to create a list of herbs
 function createHerbList(){
     const herbList=document.getElementById("herbs-list"); 
+    const herbDetails= document.createElement("div");
+    herbDetails.id = "details"; // give the div an id
+    herbDetails.style.marginTop = "16px";
+    herbList.after(herbDetails);
+
     fetch("http://localhost:3000/herbs")
     .then(response => response.json())
     .then(herbs => {
+        let isFirstHerb = true; // i want the details of the first herb to show default on the page but the rest to be clicked , so i am setting the reminder here for that
         herbs.forEach(herb =>{
             const herbItem = document.createElement("li");
             herbItem.textContent = herb.name;
             herbItem.style.cursor = "pointer";
             herbList.appendChild(herbItem);
 
-
-// Now we want to add an event, which is click,
-// Folloing the event is an eventhandler. When an hern item is clicked, then it should display all the herb details
-            herbItem.addEventListener("click", function(){
-                // first we create a div where all the details will be displayed.
-                const herbDetails= document.createElement("div");
-                herbDetails.id = "details"; // give the div an id
-                herbDetails.style.marginTop = "16px";
-
-
-// the div will have an inner elements which contain the details of an herb item
+            // to show the first herb with all its details by default
+            if(isFirstHerb){
                 herbDetails.innerHTML = `
                 <h2>${herb.name}</h2>
                 <p><strong>Scientific Name:</strong>${herb.scientificName}</p>
                 <p><strong>Description:</strong>${herb.description}</p>
                 <p><strong>Benefits:</strong>${herb.benefits}</p>
-                <img src="${herb.image}" alt="${herb.name}"/>
+                <img src="${herb.image}" alt="${herb.name}" width="400px" />
+            `;
+            isFirstHerb = false; // other herbs details should not who automatically like the first help until clicked.
+
+            }
+
+
+// Now we want to add an event, which is click,
+// Folloing the event is an eventhandler. When an hern item is clicked, then it should display all the herb details
+            
+            herbItem.addEventListener("click", function(){                
+
+// the div will have an inner elements which contain the details of an herb item
+                herbDetails.innerHTML ="";
+                herbDetails.innerHTML = `
+                <h2>${herb.name}</h2>
+                <p><strong>Scientific Name:</strong>${herb.scientificName}</p>
+                <p><strong>Description:</strong>${herb.description}</p>
+                <p><strong>Benefits:</strong>${herb.benefits}</p>
+                <img src="${herb.image}" alt="${herb.name}" width="400px" />
                 `;
-                // we want to add the div with the details after the list so we use .after(), a method.
-                herbList.after(herbDetails);
+                
+                
 
-
-            })
+            });
+            
+    
         });
 
     });
+    
     
 
     
