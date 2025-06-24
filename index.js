@@ -11,6 +11,16 @@ function createHerbList(){
     herbDetails.style.marginTop = "16px";
     herbList.after(herbDetails);
 
+    const instructionMsg = document.createElement("p");
+    instructionMsg.textContent = "Click on each herb to view details";
+    instructionMsg.style.fontStyle = "italic";
+    instructionMsg.style.color = "yellow";
+    instructionMsg.style.marginBottom = "10px";
+
+    herbList.before(instructionMsg);
+
+
+
     fetch("http://localhost:3000/herbs")
     .then(response => response.json())
     .then(herbs => {
@@ -58,6 +68,26 @@ function createHerbList(){
         });
 
     });
+    // Now we want to let the user add their favorite herbs which is then added to our server
+    const userHerbForm = document.getElemenyById("user-herbs-input");
+    const thankYouMsg = document.getElementById("thanks-msg");
+
+    userHerbForm.addEventListener("submit", function(e){
+        e.preventDefault(); // the page should not reload upon submission(default behavior)
+
+        const name = document.getElementById("name").value;
+        const  scientificName = document.getElementById("scientific-name").value;
+        const description = document.getElementById("description").value;
+        const benefits = document.getElementById("benefits").value;
+
+        const image = "https://images.unsplash.com/photo-1615484477867-e5b0f4cc273d?q=80&w=800"; // default image
+        const newHerb = { name, scientificName, description, benefits, image };
+
+        fetch("")
+
+    })
+
+
     
     
 
