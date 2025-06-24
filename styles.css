@@ -22,6 +22,74 @@ body{
 section h1, section h2, section h3{
     margin-bottom: 10px;
     color: #633d0b;  
+    text-align: center;
 }
+
+#section-1{
+    margin-bottom: 40px;
+    padding: 20px;
+    border-left: 40px;
+}
+
+section-1 p{
+    margin-top: 15px;
+    max-width: 700px;
+}
+
+#image-1{
+    margin-top: 15px;
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+}
+
+#section-2{
+    margin-bottom: 40px;
+    padding: 20px;
+    border-left: 100px #66bb6a;
+
+}
+
+#herbs-list{
+    margin-left: 80px;
+    margin-top: 20px;
+    list-style-type: disc;
+
+}
+
+form input[type="text"],
+form textarea{
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border: 1px dashed #a5d6a7;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+forn input[type="radio"]{
+    margin-right: 5px;
+}
+
+#add-herb-btn, #feedback-btn{
+    padding:10px 20px;
+    background-color: #04536b;
+    color: bisque;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#section
+
+
+
+
+
+
+
+
+
 
 
