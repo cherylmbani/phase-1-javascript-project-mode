@@ -22,8 +22,34 @@
         <img id="image-1" src="https://images.unsplash.com/photo-1514733670139-4d87a1941d55?q=80&w=1178&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Assorted Herbs" width="300px">
     </section>
 
+    <section id="section-2">
+        <h1>Why Herb Hero</h1>
+        <p>Herb Hero stands out by combining trusted herbal wisdom with everyday practicality. We focus on simple remedies, clear guidance, and a modern approach to ancient traditions. No fluff, no confusion, just real herbal knowledge you can use in your kitchen, your teacup, or your healing routine.</p>
+    </section>
+
     <section>
-        <h1></h1>
+        <div class="div-1">
+            <h2>Popular Herbs</h2>
+            <ul id="herbs-list">
+                <!-- this is where the list of herbs will go when fetched from the server-->
+            </ul>
+        </div>
+        
+        <div id="div-2">
+            <form id="feedback-form">
+                <p> have you used any of the natural herbs before? </p>
+                <input type="radio" id="yes" name="herbs-used" value="Yes">
+                <label for="yes"> Yes</label>
+                <input type="radio" id="no" name="herbs-used" value="no">
+                <label for="no"> No</label><br><br>
+
+                <p> Please share your experience</p>
+                <textarea name="message" rows="4" cols="40" placeholder="Your experience" maxlength="300"></textarea><br>
+                <button type="submit"> Submit</button>
+            </form>
+        </div>
+        
+
     </section>
 
 
