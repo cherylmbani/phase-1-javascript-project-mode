@@ -83,9 +83,39 @@ function createHerbList(){
         const image = "https://images.unsplash.com/photo-1615484477867-e5b0f4cc273d?q=80&w=800"; // default image
         const newHerb = { name, scientificName, description, benefits, image };
 
-        fetch("")
+        fetch("http://localhost:3000/herbs",{
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(newHerb)
+        })
+        .then(response => response.json())
+        .then(addedHerb => {
+            thankYouMsg.textContent = " Thank you! Your herb was added to the list.";
+            setTimeout(()=>{
+                thankYouMsg.textContent = "";
+            }, 3000);
 
-    })
+
+            const herbItem = document.createElement("li");
+            herbItem.textContent = addedHerb.name;
+            herbItem.style.cursor = "pointer";
+            herbList.appendChild(herbItem);
+
+            herbItem.addEventListener("click", function () {
+                herbDetails.innerHTML = `
+                    <h2>${addedHerb.name}</h2>
+                    <p><strong>Scientific Name:</strong> ${addedHerb.scientificName}</p>
+                    <p><strong>Description:</strong> ${addedHerb.description}</p>
+                    <p><strong>Benefits:</strong> ${addedHerb.benefits}</p>
+                    <img src="${addedHerb.image}" alt="${addedHerb.name}" width="400px" />
+                `;
+            });
+            userHerbForm.reset(); // Once a new herb has been added, all the input fields should clear.
+        });
+
+    });
 
 
     
