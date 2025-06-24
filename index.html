@@ -45,11 +45,28 @@
 
                 <p> Please share your experience</p>
                 <textarea name="message" rows="4" cols="40" placeholder="Your experience" maxlength="300"></textarea><br>
-                <button type="submit"> Submit</button>
+                <button type="submit"> Submit</button><br><br>
             </form>
         </div>
+    </section>
+    <section id="section-3">
+        <!-- This is where we use the user can add their own herbs and we POST it to the server-->
+         <!-- A form is created for the user's input-->
+          <h3> Got A Leafy Tip! Share with Us to Contribute to Herb Hero</h3>
+          <p><em> Have a secret leaf? A treasured herb whispered from one generation to the next, passed through hands that healed and hearts that believed? Share it here. Let your sacred green offering root itself in our shared soil, and watch its magic spread — one name, one bloom, one story at a time.</em></p>
+          
+          <form id="user-herbs-input">
+            <label for="name"> Name:</label>
+            <input type="text" id=" name" name="name" required><br>
+            <label for="scientific-name"> Scientific name:</label>
+            <input type="text" id="scientific-name" name="scientific-name"><br>
+            <label for="description">Short description:</label>
+            <input type="text" id="description"><br>
+            <label for="benefits"> Benefits: </label>
+            <input type="text" id="benefits" name="beefits" placeholder="1 or 2 benefits"><br>
+            <button type="submit"> Add herb</button>
         
-
+          </form>
     </section>
 
 
