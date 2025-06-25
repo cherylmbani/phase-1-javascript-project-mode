@@ -94,6 +94,16 @@ forn input[type="radio"]{
     font-size: 30px;
     color: red;
 }
+.side-by{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+.div-1{
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
 
 
 

@@ -47,7 +47,6 @@ function createHerbList(){
 
             }
 
-
 // Now we want to add an event, which is click,
 // Folloing the event is an eventhandler. When an hern item is clicked, then it should display all the herb details
             
@@ -117,29 +116,34 @@ function createHerbList(){
 
     });
 }
-    function setUpFilterForm(){
-        const filterSelect = document.getElementById("filter");
 
+    function setUpFilterForm(){
+        const filterSelect = document.getElementById("filter"); // grab the form with the drop down using its id
+// the event is change because it is a dropdown. when a user changes the option, the value of the option is stored in a variable
         filterSelect.addEventListener("change", (e) => {
         const selectedBenefit = e.target.value.toLowerCase();
+        // the result of the change event will be stored in the div with the id, filtered-resulst
         const resultsContainer = document.getElementById("filtered-results");
 
+        // once a user changes to another option, then the value of the option previously selected should be cleared.
         resultsContainer.innerHTML = ""; // clear previous results
 
         if (!selectedBenefit || selectedBenefit === "all") {
             const p = document.createElement("p");
             p.textContent = "Showing all herbs.";
             resultsContainer.appendChild(p);
-            return;
+            return; // no selection means that the execution shoud stop
         }
+
+        // Now, we delve into .filter(), an iteration method which returns all the items that meet the condition
         const matchingHerbs = allHerbs.filter((herb) =>
-            herb.benefits.toLowerCase().includes(selectedBenefit)
+            herb.benefits.toLowerCase().includes(selectedBenefit) // the condition to be met is similar benefits
         );
         if (matchingHerbs.length === 0) {
             const noMatch = document.createElement("p");
             noMatch.textContent = "No herbs found for that benefit.";
             resultsContainer.appendChild(noMatch);
-            return;
+            return; // this is for the case of no herb providing the selected benefits
         }
         const title = document.createElement("h3");
         title.textContent = `Herbs for ${selectedBenefit}`;
@@ -156,7 +160,7 @@ function createHerbList(){
             const herbName = document.createElement("p");
             herbName.textContent = herb.name;
             herbName.style.fontWeight ="bold";
-            
+
 
             const herbImage = document.createElement("img");
             herbImage.src=herb.image;
