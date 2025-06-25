@@ -21,7 +21,7 @@
       "name": "Fennel",
       "scientificName": "Foeniculum vulgare",
       "description": "An aromatic hern know for its licorice-like flavor and feathery leaves. It has a bulbous base, long green stalks, and produces small, yellow flowers.",
-      "benefits": " Relieves gas, supports digestion",
+      "benefits": " Relieves gas, soothes digestion",
       "image": "https://images.unsplash.com/photo-1587493053604-f943541023aa?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
@@ -45,7 +45,7 @@
       "name": "Turmeric",
       "scientificName": "Curcuma longa",
       "description": "Golden root with powerful anti-inflammatory effects.",
-      "benefits": " Supports digestion, reduces inflammation",
+      "benefits": " Soothes digestion, reduces inflammation",
       "image": "https://images.unsplash.com/photo-1615485500834-bc10199bc727?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
@@ -53,7 +53,7 @@
       "name": "Mugwort",
       "scientificName": "Artemisia vulgaris",
       "description": "A wild herb with a long history in dreamwork, rituals, and digestion.",
-      "benefits": "Enhances dreams, supports digestion, eases menstrual discomfort",
+      "benefits": "Enhances dreams, soothes digestion, eases menstrual discomfort",
       "image": "https://plus.unsplash.com/premium_photo-1675430785093-239946363048?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
@@ -61,7 +61,7 @@
       "name": "Moringa",
       "scientificName": "Moringa oleifera",
       "description": "A nutrient-rich plant often referred to as the \"miracle tree\" due to its medicinal properties.",
-      "benefits": "Boosts immunity, supports digestion",
+      "benefits": "Boosts immunity, soothes digestion",
       "image": "https://images.unsplash.com/photo-1615484477867-e5b0f4cc273d?q=80&w=800"
     },
     {
@@ -69,7 +69,7 @@
       "name": "Moringa",
       "scientificName": "Moringa oleifera",
       "description": "A nutrient-rich plant often referred to as the \"miracle tree\" due to its medicinal properties.",
-      "benefits": "Boosts immunity, supports digestion",
+      "benefits": "boosts immunity, soothes digestion",
       "image": "https://images.unsplash.com/photo-1615484477867-e5b0f4cc273d?q=80&w=800"
     },
     {

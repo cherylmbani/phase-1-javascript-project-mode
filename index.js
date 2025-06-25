@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(e){
 createHerbList();
+setUpFilterForm();
 });
+let allHerbs =[];
 
 // first, grab the tag ul which will contain the list of the herbs
 // use fetch default GET to access the server herbs data and use the data to create a list of herbs
@@ -24,6 +26,7 @@ function createHerbList(){
     fetch("http://localhost:3000/herbs")
     .then(response => response.json())
     .then(herbs => {
+        allHerbs = herbs;
         let isFirstHerb = true; // i want the details of the first herb to show default on the page but the rest to be clicked , so i am setting the reminder here for that
         herbs.forEach(herb =>{
             const herbItem = document.createElement("li");
@@ -113,23 +116,63 @@ function createHerbList(){
         });
 
     });
-    // we grab the html form and select elements
-    const filterForm = document.getElementById("filter-form"); // grab the form
-    const selectBenefits = document.getElementById("filter"); // grab the select element
-    
-    filterForm.addEventListener("change", function(){ // event is change, after that is eventhandling, what should happen upon the user selecting another option?
-        const benefitsSelected = selectBenefits.value.toLowerCase(); // the selected option should be stored in the variable called benefitsSelected 
+}
+    function setUpFilterForm(){
+        const filterSelect = document.getElementById("filter");
+
+        filterSelect.addEventListener("change", (e) => {
+        const selectedBenefit = e.target.value.toLowerCase();
+        const resultsContainer = document.getElementById("filtered-results");
+
+        resultsContainer.innerHTML = ""; // clear previous results
+
+        if (!selectedBenefit || selectedBenefit === "all") {
+            const p = document.createElement("p");
+            p.textContent = "Showing all herbs.";
+            resultsContainer.appendChild(p);
+            return;
+        }
+        const matchingHerbs = allHerbs.filter((herb) =>
+            herb.benefits.toLowerCase().includes(selectedBenefit)
+        );
+        if (matchingHerbs.length === 0) {
+            const noMatch = document.createElement("p");
+            noMatch.textContent = "No herbs found for that benefit.";
+            resultsContainer.appendChild(noMatch);
+            return;
+        }
+        const title = document.createElement("h3");
+        title.textContent = `Herbs for ${selectedBenefit}`;
+        resultsContainer.appendChild(title);
+
+        const ul = document.createElement("ul");
+        ul.style.listStyle="none";
+        ul.style.padding = "0";
         
-        fetch("")
-    })
-    
+        matchingHerbs.forEach((herb) => {
+            const li = document.createElement("li");
+            li.style.marginBottom = "20px";
 
+            const herbName = document.createElement("p");
+            herbName.textContent = herb.name;
+            herbName.style.fontWeight ="bold";
+            
 
+            const herbImage = document.createElement("img");
+            herbImage.src=herb.image;
+            herbImage.alt=herb.name;
+            herbImage.width=200;
 
-    
-    
-
-    
-
+            li.appendChild(herbName);
+            li.appendChild(herbImage);
+            ul.appendChild(li);
+        });
+        
+        resultsContainer.appendChild(ul);
+  });
 }
 
+
+
+
+        

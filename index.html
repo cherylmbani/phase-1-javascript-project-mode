@@ -37,16 +37,7 @@
         </div>
         <br><br>
 
-        <form id="filter-form">
-            <label for="filter"> <strong style="color: rgb(105, 213, 255);">Filter by Benefits:</strong></label>
-            <select id="filter" name="filter" size = "1" >
-                <option value="soothes digestion">Soothes digestion</option>
-                <option value=" relieves headache">Relieves headache</option>
-                <option value="reduces anxiety">Reduces anxiety</option>
-                <option value="reduces inflammation">Reduces inflammation</option>
-                <option value="boosts immunity">Boosts immunity</option>
-            </select>
-        </form>
+        
         
         <div id="div-2">
             <form id="feedback-form">
@@ -60,6 +51,20 @@
                 <textarea name="message" rows="4" cols="40" placeholder="Your experience" maxlength="300"></textarea><br>
                 <button type="submit" id="feedback-btn"> Submit</button><br><br>
             </form>
+
+            <form id="filter-form">
+            <label for="filter"> <strong style="color: rgb(105, 213, 255);">Filter by Benefits:</strong></label>
+            <select id="filter" name="filter" size = "1" >
+                <option value="digestion">Soothes digestion</option>
+                <option value="headache">Relieves headache</option>
+                <option value="anxiety">Reduces anxiety</option>
+                <option value="inflammation">Reduces inflammation</option>
+                <option value="immunity">Boosts immunity</option>
+            </select>
+        </form>
+        <div id="filtered-results">
+            <!-- This is where the filtered list will appear-->
+        </div>
         </div>
     </section>
     <section id="section-3">
