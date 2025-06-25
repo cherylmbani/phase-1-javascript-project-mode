@@ -1,61 +1,84 @@
 {
-    "herbs":[
-        {
-            "id": 1,
-            "name": "Aloe Vera",
-            "scientificName": "Aloe barbadensis miller",
-            "description": "a succulent plant known for its thick, fleshy, green to grey-green leaves, often with white flecks and serrated edges.",
-            "benefits": "Soothes burns, promote wound healig, aids digestion",
-            "image": "https://images.unsplash.com/photo-1718857256152-137bce5bd17a?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        },
-        {
-            "id": 2,
-            "name":"Ginger",
-            "scientificName":"Zingiber officinale",
-            "description":"a flowering plant, cultivated for its pungent, aromatic rhizome (underground stem) which is used as a spice and sometimes in medicine.",
-            "benefits":"Aids digestion, reduces nausea",
-            "image": "https://images.unsplash.com/photo-1635843104103-ddd88e1c5141?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        },
-        {
-            "id": 3,
-            "name": "Fennel",
-            "scientificName": "Foeniculum vulgare",
-            "description": "An aromatic hern know for its licorice-like flavor and feathery leaves. It has a bulbous base, long green stalks, and produces small, yellow flowers.",
-            "benefits": " Relieves gas, supports digestion",
-            "image": "https://images.unsplash.com/photo-1587493053604-f943541023aa?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        },
-        {
-            "id": 4,
-            "name": "Peppermint",
-            "scientificName": "Mentha piperita",
-            "description": "A fragrant perennial herb characterized by square stems, lanceolate leaves with serrated edges, and purple flowers.",
-            "benefits": " Soothes digestion, relieves headache, and improves focus and memory.",
-            "image": "https://plus.unsplash.com/premium_photo-1673264303561-de2ab31df03c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        },
-        {
-            "id": 5,
-            "name": "Chamomile",
-            "scientificName": "Matricaria chamomilla",
-            "description": "Gentle flower used to calm the gut and mind.",
-            "benefits": " Eases digestion, reduces anxiety, supports skin health",
-            "image": "https://images.unsplash.com/photo-1654450288144-ff490e975f40?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        },
-        {
-            "id": 6,
-            "name": "Turmeric",
-            "scientificName": "Curcuma longa",
-            "description": "Golden root with powerful anti-inflammatory effects.",
-            "benefits": " Supports digestion, reduces inflammation",
-            "image": "https://images.unsplash.com/photo-1615485500834-bc10199bc727?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        },
-        {
-            "id": 7,
-            "name": "Mugwort",
-            "scientificName": "Artemisia vulgaris",
-            "description": "A wild herb with a long history in dreamwork, rituals, and digestion.",
-            "benefits": "Enhances dreams, supports digestion, eases menstrual discomfort",
-            "image": "https://plus.unsplash.com/premium_photo-1675430785093-239946363048?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        }
-    ]
-
+  "herbs": [
+    {
+      "id": "1",
+      "name": "Aloe Vera",
+      "scientificName": "Aloe barbadensis miller",
+      "description": "a succulent plant known for its thick, fleshy, green to grey-green leaves, often with white flecks and serrated edges.",
+      "benefits": "Soothes burns, promote wound healig, supports digestion",
+      "image": "https://images.unsplash.com/photo-1718857256152-137bce5bd17a?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "2",
+      "name": "Ginger",
+      "scientificName": "Zingiber officinale",
+      "description": "a flowering plant, cultivated for its pungent, aromatic rhizome (underground stem) which is used as a spice and sometimes in medicine.",
+      "benefits": "Soothes digestion, reduces nausea",
+      "image": "https://images.unsplash.com/photo-1635843104103-ddd88e1c5141?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "3",
+      "name": "Fennel",
+      "scientificName": "Foeniculum vulgare",
+      "description": "An aromatic hern know for its licorice-like flavor and feathery leaves. It has a bulbous base, long green stalks, and produces small, yellow flowers.",
+      "benefits": " Relieves gas, supports digestion",
+      "image": "https://images.unsplash.com/photo-1587493053604-f943541023aa?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "4",
+      "name": "Peppermint",
+      "scientificName": "Mentha piperita",
+      "description": "A fragrant perennial herb characterized by square stems, lanceolate leaves with serrated edges, and purple flowers.",
+      "benefits": " Soothes digestion, relieves headache, reduces anxiety and improves focus and memory.",
+      "image": "https://plus.unsplash.com/premium_photo-1673264303561-de2ab31df03c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "5",
+      "name": "Chamomile",
+      "scientificName": "Matricaria chamomilla",
+      "description": "Gentle flower used to calm the gut and mind.",
+      "benefits": " Soothes digestion, reduces anxiety, reduces inflammation, supports skin health",
+      "image": "https://images.unsplash.com/photo-1654450288144-ff490e975f40?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "6",
+      "name": "Turmeric",
+      "scientificName": "Curcuma longa",
+      "description": "Golden root with powerful anti-inflammatory effects.",
+      "benefits": " Supports digestion, reduces inflammation",
+      "image": "https://images.unsplash.com/photo-1615485500834-bc10199bc727?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "7",
+      "name": "Mugwort",
+      "scientificName": "Artemisia vulgaris",
+      "description": "A wild herb with a long history in dreamwork, rituals, and digestion.",
+      "benefits": "Enhances dreams, supports digestion, eases menstrual discomfort",
+      "image": "https://plus.unsplash.com/premium_photo-1675430785093-239946363048?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "4e1c",
+      "name": "Moringa",
+      "scientificName": "Moringa oleifera",
+      "description": "A nutrient-rich plant often referred to as the \"miracle tree\" due to its medicinal properties.",
+      "benefits": "Boosts immunity, supports digestion",
+      "image": "https://images.unsplash.com/photo-1615484477867-e5b0f4cc273d?q=80&w=800"
+    },
+    {
+      "id": "34e9",
+      "name": "Moringa",
+      "scientificName": "Moringa oleifera",
+      "description": "A nutrient-rich plant often referred to as the \"miracle tree\" due to its medicinal properties.",
+      "benefits": "Boosts immunity, supports digestion",
+      "image": "https://images.unsplash.com/photo-1615484477867-e5b0f4cc273d?q=80&w=800"
+    },
+    {
+      "id": "6589",
+      "name": "",
+      "scientificName": "",
+      "description": "",
+      "benefits": "",
+      "image": "https://images.unsplash.com/photo-1615484477867-e5b0f4cc273d?q=80&w=800"
+    }
+  ]
 }

@@ -36,6 +36,17 @@
             
         </div>
         <br><br>
+
+        <form id="filter-form">
+            <label for="filter"> <strong style="color: rgb(105, 213, 255);">Filter by Benefits:</strong></label>
+            <select id="filter" name="filter" size = "1" >
+                <option value="soothes digestion">Soothes digestion</option>
+                <option value=" relieves headache">Relieves headache</option>
+                <option value="reduces anxiety">Reduces anxiety</option>
+                <option value="reduces inflammation">Reduces inflammation</option>
+                <option value="boosts immunity">Boosts immunity</option>
+            </select>
+        </form>
         
         <div id="div-2">
             <form id="feedback-form">
@@ -66,9 +77,11 @@
             <input type="text" id="description" name="description"><br>
             <label for="benefits"> Benefits: </label>
             <input type="text" id="benefits" name="benefits" placeholder="1 or 2 benefits"><br>
+            <label for="image"> Image:</label>
+            <input type="text" id="image" name="image" placeholder="https://plus.unsplash.com/premium_photo-1675430785093-239946363048?q=80&w=1172&au">            
             <button type="submit" id="add-herb-btn"> Add herb</button>
           </form>
-          <p id="thanks-msg" style="color:burlywood" font-weight="bold;"></p>
+        
     </section>
 
     <div id="feedback-icons">

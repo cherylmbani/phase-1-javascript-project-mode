@@ -69,7 +69,7 @@ function createHerbList(){
 
     });
     // Now we want to let the user add their favorite herbs which is then added to our server
-    const userHerbForm = document.getElemenyById("user-herbs-input");
+    const userHerbForm = document.getElementById("user-herbs-input");
     const thankYouMsg = document.getElementById("thanks-msg");
 
     userHerbForm.addEventListener("submit", function(e){
@@ -92,10 +92,7 @@ function createHerbList(){
         })
         .then(response => response.json())
         .then(addedHerb => {
-            thankYouMsg.textContent = " Thank you! Your herb was added to the list.";
-            setTimeout(()=>{
-                thankYouMsg.textContent = "";
-            }, 3000);
+            alert("Thank you! Your herb was added to the list successfully");
 
 
             const herbItem = document.createElement("li");
@@ -116,6 +113,8 @@ function createHerbList(){
         });
 
     });
+
+    
 
 
     
