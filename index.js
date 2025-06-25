@@ -113,8 +113,17 @@ function createHerbList(){
         });
 
     });
-
+    // we grab the html form and select elements
+    const filterForm = document.getElementById("filter-form"); // grab the form
+    const selectBenefits = document.getElementById("filter"); // grab the select element
     
+    filterForm.addEventListener("change", function(){ // event is change, after that is eventhandling, what should happen upon the user selecting another option?
+        const benefitsSelected = selectBenefits.value.toLowerCase(); // the selected option should be stored in the variable called benefitsSelected 
+        
+        fetch("")
+    })
+    
+
 
 
     
