@@ -71,14 +71,10 @@
       "description": "A nutrient-rich plant often referred to as the \"miracle tree\" due to its medicinal properties.",
       "benefits": "boosts immunity, soothes digestion",
       "image": "https://images.unsplash.com/photo-1615484477867-e5b0f4cc273d?q=80&w=800"
-    },
-    {
-      "id": "6589",
-      "name": "",
-      "scientificName": "",
-      "description": "",
-      "benefits": "",
-      "image": "https://images.unsplash.com/photo-1615484477867-e5b0f4cc273d?q=80&w=800"
     }
+    
+    
+    
+    
   ]
 }

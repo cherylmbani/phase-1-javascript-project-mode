@@ -8,21 +8,13 @@ let allHerbs =[];
 // use fetch default GET to access the server herbs data and use the data to create a list of herbs
 function createHerbList(){
     const herbList=document.getElementById("herbs-list"); 
+    const herbContainer=herbList.parentElement;
     const herbDetails= document.createElement("div");
     herbDetails.id = "details"; // give the div an id
     herbDetails.style.marginTop = "16px";
-    herbList.after(herbDetails);
+    herbContainer.appendChild(herbDetails);
 
-    const instructionMsg = document.createElement("p");
-    instructionMsg.textContent = "Click on each herb to view details";
-    instructionMsg.style.fontStyle = "italic";
-    instructionMsg.style.color = "yellow";
-    instructionMsg.style.marginBottom = "10px";
-
-    herbList.before(instructionMsg);
-
-
-
+    
     fetch("http://localhost:3000/herbs")
     .then(response => response.json())
     .then(herbs => {
@@ -112,10 +104,12 @@ function createHerbList(){
                 `;
             });
             userHerbForm.reset(); // Once a new herb has been added, all the input fields should clear.
+            
         });
 
     });
 }
+
 
     function setUpFilterForm(){
         const filterSelect = document.getElementById("filter"); // grab the form with the drop down using its id

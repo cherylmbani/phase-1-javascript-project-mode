@@ -17,6 +17,10 @@ body{
     background-color: #021402;
     color: #f5f5f5;
     padding: 20px;
+    background-image: url("https://images.unsplash.com/photo-1659825216991-e79b56e23325?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 section h1, section h2, section h3{
@@ -99,9 +103,9 @@ forn input[type="radio"]{
     gap: 30px;
     padding: 20px;
 }
-.div-1{
+.herb-container{
     display: flex;
-    gap: 50px;
+    gap: 100px;
     align-items: flex-start;
 }
 
