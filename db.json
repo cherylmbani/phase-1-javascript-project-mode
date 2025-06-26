@@ -55,23 +55,8 @@
       "description": "A wild herb with a long history in dreamwork, rituals, and digestion.",
       "benefits": "Enhances dreams, soothes digestion, eases menstrual discomfort",
       "image": "https://plus.unsplash.com/premium_photo-1675430785093-239946363048?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
-      "id": "4e1c",
-      "name": "Moringa",
-      "scientificName": "Moringa oleifera",
-      "description": "A nutrient-rich plant often referred to as the \"miracle tree\" due to its medicinal properties.",
-      "benefits": "Boosts immunity, soothes digestion",
-      "image": "https://images.unsplash.com/photo-1615484477867-e5b0f4cc273d?q=80&w=800"
-    },
-    {
-      "id": "34e9",
-      "name": "Moringa",
-      "scientificName": "Moringa oleifera",
-      "description": "A nutrient-rich plant often referred to as the \"miracle tree\" due to its medicinal properties.",
-      "benefits": "boosts immunity, soothes digestion",
-      "image": "https://images.unsplash.com/photo-1615484477867-e5b0f4cc273d?q=80&w=800"
     }
+    
     
     
     
