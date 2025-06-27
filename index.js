@@ -28,13 +28,14 @@ function createHerbList(){
 
             // to show the first herb with all its details by default
             if(isFirstHerb){
-                herbDetails.innerHTML = `
-                <h2>${herb.name}</h2>
-                <p><strong>Scientific Name:</strong>${herb.scientificName}</p>
-                <p><strong>Description:</strong>${herb.description}</p>
-                <p><strong>Benefits:</strong>${herb.benefits}</p>
-                <img src="${herb.image}" alt="${herb.name}" width="400px" />
-            `;
+                renderHerbDetails(herb, herbDetails);
+               // herbDetails.innerHTML = `
+               // <h2>${herb.name}</h2>
+                //<p><strong>Scientific Name:</strong>${herb.scientificName}</p>
+                //<p><strong>Description:</strong>${herb.description}</p>
+                //<p><strong>Benefits:</strong>${herb.benefits}</p>
+               // <img src="${herb.image}" alt="${herb.name}" width="400px" />
+            //`;
             isFirstHerb = false; // other herbs details should not who automatically like the first help until clicked.
 
             }
@@ -42,17 +43,18 @@ function createHerbList(){
 // Now we want to add an event, which is click,
 // Folloing the event is an eventhandler. When an hern item is clicked, then it should display all the herb details
             
-            herbItem.addEventListener("click", function(){                
+            herbItem.addEventListener("click", function(){  
+                renderHerbDetails(herb, herbDetails);              
 
 // the div will have an inner elements which contain the details of an herb item
-                herbDetails.innerHTML ="";
-                herbDetails.innerHTML = `
-                <h2>${herb.name}</h2>
-                <p><strong>Scientific Name:</strong>${herb.scientificName}</p>
-                <p><strong>Description:</strong>${herb.description}</p>
-                <p><strong>Benefits:</strong>${herb.benefits}</p>
-                <img src="${herb.image}" alt="${herb.name}" width="400px" />
-                `;
+                //herbDetails.innerHTML ="";
+                //herbDetails.innerHTML = `
+                //<h2>${herb.name}</h2>
+                //<p><strong>Scientific Name:</strong>${herb.scientificName}</p>
+                //<p><strong>Description:</strong>${herb.description}</p>
+                //<p><strong>Benefits:</strong>${herb.benefits}</p>
+                //<img src="${herb.image}" alt="${herb.name}" width="400px" />
+                //`;
                 
                 
 
@@ -95,13 +97,14 @@ function createHerbList(){
             herbList.appendChild(herbItem);
 
             herbItem.addEventListener("click", function () {
-                herbDetails.innerHTML = `
-                    <h2>${addedHerb.name}</h2>
-                    <p><strong>Scientific Name:</strong> ${addedHerb.scientificName}</p>
-                    <p><strong>Description:</strong> ${addedHerb.description}</p>
-                    <p><strong>Benefits:</strong> ${addedHerb.benefits}</p>
-                    <img src="${addedHerb.image}" alt="${addedHerb.name}" width="400px" />
-                `;
+                renderHerbDetails(addedHerb, herbDetails);
+                //herbDetails.innerHTML = `
+                    //<h2>${addedHerb.name}</h2>
+                    //<p><strong>Scientific Name:</strong> ${addedHerb.scientificName}</p>
+                    //<p><strong>Description:</strong> ${addedHerb.description}</p>
+                   // <p><strong>Benefits:</strong> ${addedHerb.benefits}</p>
+                   // <img src="${addedHerb.image}" alt="${addedHerb.name}" width="400px" />
+                //`;
             });
             userHerbForm.reset(); // Once a new herb has been added, all the input fields should clear.
             
@@ -168,6 +171,18 @@ function createHerbList(){
         
         resultsContainer.appendChild(ul);
   });
+}
+
+
+// now the reusable function 
+function renderHerbDetails(herb, container){
+    container.innerHTML=`
+    <h2>${addedHerb.name}</h2>
+    <p><strong>Scientific Name:</strong> ${addedHerb.scientificName}</p>
+    <p><strong>Description:</strong> ${addedHerb.description}</p>
+    <p><strong>Benefits:</strong> ${addedHerb.benefits}</p>
+    <img src="${addedHerb.image}" alt="${addedHerb.name}" width="400px" />
+`;
 }
 
 
