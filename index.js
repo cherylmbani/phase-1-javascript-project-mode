@@ -29,6 +29,7 @@ function createHerbList(){
             // to show the first herb with all its details by default
             if(isFirstHerb){
                 renderHerbDetails(herb, herbDetails);
+                // uncommenting this to avoid repetition.
                // herbDetails.innerHTML = `
                // <h2>${herb.name}</h2>
                 //<p><strong>Scientific Name:</strong>${herb.scientificName}</p>
@@ -177,11 +178,11 @@ function createHerbList(){
 // now the reusable function 
 function renderHerbDetails(herb, container){
     container.innerHTML=`
-    <h2>${addedHerb.name}</h2>
-    <p><strong>Scientific Name:</strong> ${addedHerb.scientificName}</p>
-    <p><strong>Description:</strong> ${addedHerb.description}</p>
-    <p><strong>Benefits:</strong> ${addedHerb.benefits}</p>
-    <img src="${addedHerb.image}" alt="${addedHerb.name}" width="400px" />
+    <h2>${herb.name}</h2>
+    <p><strong>Scientific Name:</strong> ${herb.scientificName}</p>
+    <p><strong>Description:</strong> ${herb.description}</p>
+    <p><strong>Benefits:</strong> ${herb.benefits}</p>
+    <img src="${herb.image}" alt="${herb.name}" width="400px" />
 `;
 }
 

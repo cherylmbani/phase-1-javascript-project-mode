@@ -63,6 +63,14 @@
       "description": "A nutrient-rich plant often referred to as the \"miracle tree\" due to its medicinal properties.",
       "benefits": "Boosts immunity, supports digestion",
       "image": "https://images.unsplash.com/photo-1615484477867-e5b0f4cc273d?q=80&w=800"
+    },
+    {
+      "id": "5dd3",
+      "name": "Moringa",
+      "scientificName": "Moringa oleifera",
+      "description": "A nutrient-rich plant often referred to as the \"miracle tree\" due to its medicinal properties.",
+      "benefits": "Boosts immunity, supports digestion",
+      "image": "https://images.unsplash.com/photo-1615484477867-e5b0f4cc273d?q=80&w=800"
     }
   ]
 }

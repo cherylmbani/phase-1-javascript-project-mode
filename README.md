@@ -36,6 +36,11 @@ Herb Hero is a simple JavaScript web app that fetches and displays a list of her
 ---
 
 ## Getting Started
+### Live Site
+
+Check out the deployed app here:  
+[Herb Hero on GitHub Pages](https://your-username.github.io/phase-1-javascript-project-mode)
+
 
 ### Prerequisites
 
