@@ -15,7 +15,7 @@ function createHerbList(){
     herbContainer.appendChild(herbDetails);
 
     
-    fetch("http://localhost:3000/herbs")
+    fetch("https://db-server-jopi.onrender.com/herbs")
     .then(response => response.json())
     .then(herbs => {
         allHerbs = herbs;
@@ -29,7 +29,7 @@ function createHerbList(){
             // to show the first herb with all its details by default
             if(isFirstHerb){
                 renderHerbDetails(herb, herbDetails);
-                // uncommenting this to avoid repetition.
+                // commenting these lines below to avoid repetition.
                // herbDetails.innerHTML = `
                // <h2>${herb.name}</h2>
                 //<p><strong>Scientific Name:</strong>${herb.scientificName}</p>
@@ -38,7 +38,6 @@ function createHerbList(){
                // <img src="${herb.image}" alt="${herb.name}" width="400px" />
             //`;
             isFirstHerb = false; // other herbs details should not who automatically like the first help until clicked.
-
             }
 
 // Now we want to add an event, which is click,
@@ -56,14 +55,9 @@ function createHerbList(){
                 //<p><strong>Benefits:</strong>${herb.benefits}</p>
                 //<img src="${herb.image}" alt="${herb.name}" width="400px" />
                 //`;
-                
-                
-
+                  
             });
-            
-    
         });
-
     });
     // Now we want to let the user add their favorite herbs which is then added to our server
     const userHerbForm = document.getElementById("user-herbs-input");
@@ -80,7 +74,7 @@ function createHerbList(){
         const image = "https://images.unsplash.com/photo-1615484477867-e5b0f4cc273d?q=80&w=800"; // default image
         const newHerb = { name, scientificName, description, benefits, image };
 
-        fetch("http://localhost:3000/herbs",{
+        fetch("https://db-server-jopi.onrender.com/herbs",{
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -107,14 +101,10 @@ function createHerbList(){
                    // <img src="${addedHerb.image}" alt="${addedHerb.name}" width="400px" />
                 //`;
             });
-            userHerbForm.reset(); // Once a new herb has been added, all the input fields should clear.
-            
+            userHerbForm.reset(); // Once a new herb has been added, all the input fields should clear. 
         });
-
     });
 }
-
-
     function setUpFilterForm(){
         const filterSelect = document.getElementById("filter"); // grab the form with the drop down using its id
 // the event is change because it is a dropdown. when a user changes the option, the value of the option is stored in a variable
